@@ -14,14 +14,14 @@ export function FiberContainer() {
             {/* <button onClick={reset}>Refresh</button> */}
             <Canvas camera={{ position: [15, 15, 0], fov: 60 }} shadows>
                 <Scene 
-                        gridSize={20}
-                        innerSep={0.01}
-                        outerSep={0.02}
-                        radius={0.5}
-                        noiseScale={4}
-                        baseHeight={3}
+                        gridSize={10}
+                        innerSep={0.0}
+                        outerSep={0.0}
+                        radius={1}
+                        noiseScale={1}
+                        baseHeight={23}
                         minHeight={0.5}
-                        noiseFunc={'simplex'}
+                        noiseFunc={'torus'}
                     />
                 <OrbitControls minDistance={1} maxDistance={200} target={[0 , 0, 0]}/>
             </Canvas>
